@@ -1,5 +1,7 @@
 package com.ivanov.first.customarray;
 
+import com.ivanov.first.exception.CustomArrayException;
+
 import java.util.Arrays;
 
 public class CustomArray {
@@ -11,12 +13,17 @@ public class CustomArray {
     super();
   }
 
-  public CustomArray(long customArrayId, int size, int[] data) {
-    if (size > data.length) {
-      this.size = data.length;
-    } else {
-      this.size = size;
+  public CustomArray(long customArrayId, int size, int[] data) throws CustomArrayException {
+    if (data == null) {
+      throw new CustomArrayException("Input array cannot be null.");
     }
+    if (size <= 0) {
+      throw new CustomArrayException("Size must be greater than zero.");
+    }
+    if (size > data.length) {
+      throw new CustomArrayException("Size cannot exceed input array length.");
+    }
+    this.size = size;
     this.data = Arrays.copyOf(data, this.size);
   }
 
