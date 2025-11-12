@@ -1,5 +1,5 @@
 package com.ivanov.first.service;
-import com.ivanov.first.intarray.IntArray;
+import com.ivanov.first.entity.IntArray;
 import java.util.function.IntPredicate;
 
 public interface IntArrayService {

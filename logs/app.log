@@ -1,0 +1,6 @@
+[2025-11-12 09:57:49] [INFO ] IntArrayServiceImpl - Counting positive elements
+[2025-11-12 09:57:49] [INFO ] IntArrayServiceImpl - Finding max element in array with size 5
+[2025-11-12 09:57:49] [INFO ] IntArrayServiceImpl - Counting negative elements
+[2025-11-12 09:57:49] [INFO ] IntArrayServiceImpl - Replacing elements by condition with new value = 0
+[2025-11-12 09:57:49] [INFO ] IntArrayServiceImpl - Finding min element in array with size 5
+[2025-11-12 09:57:49] [INFO ] IntArrayServiceImpl - Calculating average value for array

@@ -1,4 +1,4 @@
-package com.ivanov.first.intarray;
+package com.ivanov.first.entity;
 
 import com.ivanov.first.exception.IntArrayException;
 

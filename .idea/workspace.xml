@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2dd4d05-714d-4e50-abcd-1f4f1277e1fd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/service/IntArraySort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/service/impl/IntArraySortImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ivanov/first/exception/IntArrayException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/exception/IntArrayException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ivanov/first/factory/IntArrayFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/factory/IntArrayFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ivanov/first/factory/impl/IntArrayFactoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/factory/impl/IntArrayFactoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ivanov/first/intarray/IntArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/entity/IntArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ivanov/first/service/IntArrayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/service/IntArrayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ivanov/first/service/impl/IntArrayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/service/impl/IntArrayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ivanov/first/service/impl/IntArrayServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ivanov/first/service/impl/IntArrayServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,12 +27,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JvmLoggingSettingsStorage">
+    <option name="loggerId" value="Log4j2" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2

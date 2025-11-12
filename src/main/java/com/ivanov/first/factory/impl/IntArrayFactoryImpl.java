@@ -1,5 +1,5 @@
 package com.ivanov.first.factory.impl;
-import com.ivanov.first.intarray.IntArray;
+import com.ivanov.first.entity.IntArray;
 import com.ivanov.first.exception.IntArrayException;
 import com.ivanov.first.factory.IntArrayFactory;
 
