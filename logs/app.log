@@ -82,3 +82,17 @@
 [2025-11-12 18:37:51] [INFO ] IntArrayFileServiceImpl - Invalid line in file: '5 6 seven 8'Skipped
 [2025-11-12 18:37:51] [INFO ] IntArrayFileServiceImpl - Invalid line in file: '12 thirteen 14'Skipped
 [2025-11-12 18:37:51] [INFO ] IntArrayFileServiceImpl - File was read successful!
+[2025-11-12 18:40:37] [INFO ] IntArrayFileServiceImpl - Started reading from file
+[2025-11-12 18:40:37] [INFO ] IntArrayFileServiceImpl - Invalid line in file: '5 6 seven 8'Skipped
+[2025-11-12 18:40:37] [INFO ] IntArrayFileServiceImpl - Invalid line in file: '12 thirteen 14'Skipped
+[2025-11-12 18:40:37] [INFO ] IntArrayFileServiceImpl - File was read successful!
+[2025-11-12 18:41:05] [INFO ] IntArrayFileServiceImpl - Started reading from file
+[2025-11-12 18:41:05] [INFO ] IntArrayFileServiceImpl - Invalid line in file: '5 6 seven 8'Skipped
+[2025-11-12 18:41:05] [INFO ] IntArrayFileServiceImpl - Invalid line in file: '12 thirteen 14'Skipped
+[2025-11-12 18:41:05] [INFO ] IntArrayFileServiceImpl - File was read successful!
+[2025-11-12 19:10:59] [INFO ] IntArrayServiceImpl - Counting positive elements
+[2025-11-12 19:10:59] [INFO ] IntArrayServiceImpl - Finding max element in array with size 5
+[2025-11-12 19:10:59] [INFO ] IntArrayServiceImpl - Counting negative elements
+[2025-11-12 19:10:59] [INFO ] IntArrayServiceImpl - Replacing elements by condition with new value = 0
+[2025-11-12 19:10:59] [INFO ] IntArrayServiceImpl - Finding min element in array with size 5
+[2025-11-12 19:10:59] [INFO ] IntArrayServiceImpl - Calculating average value for array

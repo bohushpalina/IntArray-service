@@ -3,6 +3,8 @@ import com.ivanov.first.entity.IntArray;
 import com.ivanov.first.service.IntArrayService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.Arrays;
 import java.util.function.IntPredicate;
 
 public class IntArrayServiceImpl implements IntArrayService {
@@ -12,15 +14,11 @@ public class IntArrayServiceImpl implements IntArrayService {
   @Override
   public int findMaxElement(IntArray intArray) {
     logger.info("Finding max element in array with size {}", intArray.getSize());
-    int size = intArray.getSize();
-    int[] data = intArray.getData();
 
-    int max = data[0];
-    for (int i = 0; i < size; ++i) {
-      if (data[i] > max) {
-        max = data[i];
-      }
-    }
+    int[] data = intArray.getData();
+    Arrays.stream(data);
+    int max = Arrays.stream(data).max().orElseThrow();
+
     logger.debug("Max element found: {}", max);
     return max;
   }
@@ -28,15 +26,11 @@ public class IntArrayServiceImpl implements IntArrayService {
   @Override
   public int findMinElement(IntArray intArray) {
     logger.info("Finding min element in array with size {}", intArray.getSize());
-    int size = intArray.getSize();
-    int[] data = intArray.getData();
 
-    int min = data[0];
-    for (int i = 0; i < size; ++i) {
-      if (data[i] < min) {
-        min = data[i];
-      }
-    }
+    int[] data = intArray.getData();
+    Arrays.stream(data);
+    int min = Arrays.stream(data).min().orElseThrow();
+
     logger.debug("Min element found: {}", min);
     return min;
   }
@@ -44,46 +38,35 @@ public class IntArrayServiceImpl implements IntArrayService {
   @Override
   public double findAverageValue(IntArray intArray) {
     logger.info("Calculating average value for array");
-    int size = intArray.getSize();
-    int[] data = intArray.getData();
 
-    double sum = 0;
-    for (int i = 0; i < size; ++i) {
-      sum += data[i];
-    }
-    double avg = sum / size;
+    int[] data = intArray.getData();
+    Arrays.stream(data);
+    double avg = Arrays.stream(data).average().orElseThrow();
+
     logger.debug("Average value = {}", avg);
     return avg;
   }
 
   @Override
-  public int findPositiveElementsCount(IntArray intArray) {
+  public long findPositiveElementsCount(IntArray intArray) {
     logger.info("Counting positive elements");
-    int size = intArray.getSize();
-    int[] data = intArray.getData();
 
-    int count = 0;
-    for (int i = 0; i < size; ++i) {
-      if (data[i] > 0) {
-        count++;
-      }
-    }
+    int[] data = intArray.getData();
+    Arrays.stream(data);
+    long count = Arrays.stream(data).filter(x -> x > 0).count();
+
     logger.debug("Positive elements count = {}", count);
     return count;
   }
 
   @Override
-  public int findNegativeElementsCount(IntArray intArray) {
+  public long findNegativeElementsCount(IntArray intArray) {
     logger.info("Counting negative elements");
-    int size = intArray.getSize();
-    int[] data = intArray.getData();
 
-    int count = 0;
-    for (int i = 0; i < size; ++i) {
-      if (data[i] < 0) {
-        count++;
-      }
-    }
+    int[] data = intArray.getData();
+    Arrays.stream(data);
+    long count = Arrays.stream(data).filter(x -> x < 0).count();
+
     logger.debug("Negative elements count = {}", count);
     return count;
   }
@@ -91,15 +74,16 @@ public class IntArrayServiceImpl implements IntArrayService {
   @Override
   public void replaceIf(IntArray array, IntPredicate condition, int newValue) {
     logger.info("Replacing elements by condition with new value = {}", newValue);
-    int[] data = array.getData();
-    int size = array.getSize();
 
-    for (int i = 0; i < size; i++) {
-      if (condition.test(data[i])) {
-        logger.trace("Element {} -> {}", data[i], newValue);
-        data[i] = newValue;
+    int[] data = array.getData();
+    Arrays.setAll(data, i -> {
+      int val = data[i];
+      if (condition.test(val)) {
+        return newValue;
       }
-    }
+      return val;
+    });
+
     logger.debug("Replacement finished.");
   }
 }

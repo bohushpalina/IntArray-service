@@ -16,8 +16,8 @@ class IntArrayServiceImplTest {
   int MAX_ELEMENT = 5;
   int MIN_ELEMENT = 1;
   double AVERAGE_VALUE = 3.0;
-  int POSITIVE_COUNT = 5;
-  int NEGATIVE_COUNT = 0;
+  long POSITIVE_COUNT = 5;
+  long NEGATIVE_COUNT = 0;
   IntArrayServiceImpl service = new IntArrayServiceImpl();
 
   @BeforeEach
@@ -49,13 +49,13 @@ class IntArrayServiceImplTest {
 
   @Test
   void findPositiveElementsCount() {
-    int actual = service.findPositiveElementsCount(array);
+    long actual = service.findPositiveElementsCount(array);
     assertEquals(POSITIVE_COUNT, actual);
   }
 
   @Test
   void findNegativeElementsCount() {
-    int actual = service.findNegativeElementsCount(array);
+    long actual = service.findNegativeElementsCount(array);
     assertEquals(NEGATIVE_COUNT, actual);
   }
 

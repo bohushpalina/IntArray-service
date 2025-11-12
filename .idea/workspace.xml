@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2dd4d05-714d-4e50-abcd-1f4f1277e1fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/parser/IntArrayParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/parser/impl/IntArrayParserImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/reader/IntArrayReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/reader/impl/IntArrayReaderImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/service/IntArrayFileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/service/impl/IntArrayFileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/validator/IntArrayValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/validator/impl/IntArrayValidatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ivanov/first/service/impl/IntArrayFileServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ivanov/first/service/IntArrayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/service/IntArrayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ivanov/first/service/impl/IntArrayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/service/impl/IntArrayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ivanov/first/service/impl/IntArraySortServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/service/impl/IntArraySortServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ivanov/first/service/impl/IntArrayFileServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ivanov/first/service/impl/IntArrayFileServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ivanov/first/service/impl/IntArrayServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ivanov/first/service/impl/IntArrayServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +50,7 @@
     "JUnit.CustomArrayServiceImplTest.executor": "Run",
     "JUnit.CustomArrayServiceImplTest.replaceIf.executor": "Run",
     "JUnit.IntArrayFileServiceImplTest.executor": "Run",
+    "JUnit.IntArrayFileServiceImplTest.readArraysFromFile.executor": "Run",
     "JUnit.IntArrayServiceImplTest.executor": "Run",
     "JUnit.IntArrayServiceImplTest.replaceIf.executor": "Run",
     "JUnit.IntArraySortServiceImplTest.executor": "Run",
@@ -79,7 +76,7 @@
       <recent name="com.ivanov.first.service.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IntArrayFileServiceImplTest">
+  <component name="RunManager" selected="JUnit.IntArrayServiceImplTest">
     <configuration name="IntArrayFileServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="first" />
       <extension name="coverage">
@@ -91,6 +88,22 @@
       <option name="PACKAGE_NAME" value="com.ivanov.first.service.impl" />
       <option name="MAIN_CLASS_NAME" value="com.ivanov.first.service.impl.IntArrayFileServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntArrayFileServiceImplTest.readArraysFromFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="first" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ivanov.first.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ivanov.first.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.ivanov.first.service.impl.IntArrayFileServiceImplTest" />
+      <option name="METHOD_NAME" value="readArraysFromFile" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,10 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IntArrayServiceImplTest" />
         <item itemvalue="JUnit.IntArrayFileServiceImplTest" />
+        <item itemvalue="JUnit.IntArrayFileServiceImplTest.readArraysFromFile" />
         <item itemvalue="JUnit.IntArraySortServiceImplTest" />
         <item itemvalue="JUnit.IntArrayServiceImplTest.replaceIf" />
-        <item itemvalue="JUnit.IntArrayServiceImplTest" />
       </list>
     </recent_temporary>
   </component>

@@ -19,7 +19,8 @@ class IntArrayFileServiceImplTest {
           "5 6 seven 8",
           "9 10 11",
           "12 thirteen 14",
-          "15 16 17 18"
+          "15 16 17 18",
+          "12, 34, -56, 89"
   );
 
   private String TEST_FILE_PATH = "src/main/resources/data/test_input.txt";
@@ -27,7 +28,8 @@ class IntArrayFileServiceImplTest {
   private int[][] EXPECTED_ARRAYS = {
           {1, 2, 3, 4},
           {9, 10, 11},
-          {15, 16, 17, 18}
+          {15, 16, 17, 18},
+          {12, 34, -56, 89}
   };
   IntArrayFileServiceImpl service = new IntArrayFileServiceImpl();
 

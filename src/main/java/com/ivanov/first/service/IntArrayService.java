@@ -6,7 +6,7 @@ public interface IntArrayService {
   int findMaxElement(IntArray intArray);
   int findMinElement(IntArray intArray);
   double findAverageValue(IntArray intArray);
-  int findPositiveElementsCount(IntArray intArray);
-  int findNegativeElementsCount(IntArray intArray);
+  long findPositiveElementsCount(IntArray intArray);
+  long findNegativeElementsCount(IntArray intArray);
   void replaceIf(IntArray array, IntPredicate condition, int newValue);
 }
