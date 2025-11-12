@@ -60,3 +60,25 @@
 [2025-11-12 10:36:14] [INFO ] IntArraySortServiceImpl - Bubble sort finished for IntArray with ID: 0
 [2025-11-12 10:36:14] [INFO ] IntArraySortServiceImpl - Merge sort started for IntArray with ID: 0
 [2025-11-12 10:36:14] [INFO ] IntArraySortServiceImpl - Merge sort finished for IntArray with ID: 0
+[2025-11-12 17:01:34] [INFO ] IntArraySortServiceImpl - Shake sort started for IntArray with ID: 0
+[2025-11-12 17:01:34] [INFO ] IntArraySortServiceImpl - Shake sort finished for IntArray with ID: 0
+[2025-11-12 17:01:34] [INFO ] IntArraySortServiceImpl - Bubble sort started for IntArray with ID: 0
+[2025-11-12 17:01:34] [INFO ] IntArraySortServiceImpl - Bubble sort finished for IntArray with ID: 0
+[2025-11-12 17:01:34] [INFO ] IntArraySortServiceImpl - Merge sort started for IntArray with ID: 0
+[2025-11-12 17:01:34] [INFO ] IntArraySortServiceImpl - Merge sort finished for IntArray with ID: 0
+[2025-11-12 18:35:40] [INFO ] IntArraySortServiceImpl - Shake sort started for IntArray with ID: 0
+[2025-11-12 18:35:40] [INFO ] IntArraySortServiceImpl - Shake sort finished for IntArray with ID: 0
+[2025-11-12 18:35:40] [INFO ] IntArraySortServiceImpl - Bubble sort started for IntArray with ID: 0
+[2025-11-12 18:35:40] [INFO ] IntArraySortServiceImpl - Bubble sort finished for IntArray with ID: 0
+[2025-11-12 18:35:40] [INFO ] IntArraySortServiceImpl - Merge sort started for IntArray with ID: 0
+[2025-11-12 18:35:40] [INFO ] IntArraySortServiceImpl - Merge sort finished for IntArray with ID: 0
+[2025-11-12 18:35:51] [INFO ] IntArrayFileServiceImpl - Started reading from file
+[2025-11-12 18:35:51] [ERROR] IntArrayFileServiceImpl - Invalid line in file: '5 6 seven 8'
+[2025-11-12 18:37:14] [INFO ] IntArrayFileServiceImpl - Started reading from file
+[2025-11-12 18:37:14] [INFO ] IntArrayFileServiceImpl - Invalid line in file: '5 6 seven 8'Skipped
+[2025-11-12 18:37:14] [INFO ] IntArrayFileServiceImpl - Invalid line in file: '12 thirteen 14'Skipped
+[2025-11-12 18:37:14] [INFO ] IntArrayFileServiceImpl - File was read successful!
+[2025-11-12 18:37:51] [INFO ] IntArrayFileServiceImpl - Started reading from file
+[2025-11-12 18:37:51] [INFO ] IntArrayFileServiceImpl - Invalid line in file: '5 6 seven 8'Skipped
+[2025-11-12 18:37:51] [INFO ] IntArrayFileServiceImpl - Invalid line in file: '12 thirteen 14'Skipped
+[2025-11-12 18:37:51] [INFO ] IntArrayFileServiceImpl - File was read successful!
