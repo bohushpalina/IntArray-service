@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2dd4d05-714d-4e50-abcd-1f4f1277e1fd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/observer/impl/IntArrayObservableImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/warehouse/Warehouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ivanov/first/entity/IntArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/entity/IntArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ivanov/first/observer/impl/IntArrayObserverImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/observer/impl/IntArrayObserverImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/warehouse/IntArrayParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/warehouse/IntArrayParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ivanov/first/repository/IntArrayRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ivanov/first/repository/IntArrayRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

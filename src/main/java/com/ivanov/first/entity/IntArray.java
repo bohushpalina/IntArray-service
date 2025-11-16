@@ -1,13 +1,18 @@
 package com.ivanov.first.entity;
 
 import com.ivanov.first.exception.IntArrayException;
+import com.ivanov.first.observer.IntArrayEvent;
+import com.ivanov.first.observer.IntArrayObservable;
+import com.ivanov.first.observer.IntArrayObserver;
+import com.ivanov.first.observer.impl.IntArrayObservableImpl;
 
 import java.util.Arrays;
 
-public class IntArray {
+public class IntArray implements IntArrayObservable {
   private long intArrayId;
   private int size;
   private int[] data;
+  private IntArrayObservable observable = new IntArrayObservableImpl(this);
 
   public IntArray() {
     super();
@@ -74,5 +79,20 @@ public class IntArray {
             ", size=" + size +
             ", data=" + Arrays.toString(data) +
             '}';
+  }
+
+  @Override
+  public void attach(IntArrayObserver observer) {
+    observable.attach(observer);
+  }
+
+  @Override
+  public void detach(IntArrayObserver observer) {
+    observable.detach(observer);
+  }
+
+  @Override
+  public void notifyObservers() {
+    observable.notifyObservers();
   }
 }

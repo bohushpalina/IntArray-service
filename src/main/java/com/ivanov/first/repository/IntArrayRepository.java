@@ -1,14 +1,19 @@
 package com.ivanov.first.repository;
 import com.ivanov.first.entity.IntArray;
+import com.ivanov.first.observer.IntArrayObserver;
+import com.ivanov.first.observer.impl.IntArrayObserverImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.util.*;
 
 public class IntArrayRepository {
 
   private static final Logger log = LogManager.getLogger(IntArrayRepository.class);
   private static IntArrayRepository instance;
+  private final IntArrayObserver observer = new IntArrayObserverImpl();
+  private List<IntArray> arrays = new ArrayList<>();
+
+
 
   private IntArrayRepository() {}
   public static IntArrayRepository getInstance() {
@@ -18,10 +23,10 @@ public class IntArrayRepository {
     }
     return instance;
   }
-  private List<IntArray> arrays = new ArrayList<>();
 
   public boolean add(IntArray array) {
     boolean result = arrays.add(array);
+    array.attach(observer);
     if (result) {
       log.info("Successfully added array: {}", array);
     } else {
@@ -30,8 +35,9 @@ public class IntArrayRepository {
     return result;
   }
 
-  public boolean remove(Object o) {
+  public boolean remove(IntArray o) {
     boolean result = arrays.remove(o);
+    o.detach(observer);
     if (result) {
       log.info("Successfully removed object: {}", o);
     } else {
