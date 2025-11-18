@@ -35,7 +35,7 @@ public class IntArrayFileServiceImpl implements IntArrayFileService {
     for (String line : lines) {
       if (validator.isValid(line)) {
         int[] data = parser.parseLine(line);
-        IntArray intArray = factory.create(idCounter++, data.length, data);
+        IntArray intArray = factory.create(idCounter++, data);
         arrays.add(intArray);
       } else {
         String msg = "Invalid line in file: '" + line + "'" + "Skipped";

@@ -5,7 +5,7 @@ import com.bohush.ft.factory.IntArrayFactory;
 
 public class IntArrayFactoryImpl implements IntArrayFactory {
   @Override
-  public IntArray create(long intArrayId, int size, int[] data) throws IntArrayException {
-    return new IntArray(intArrayId, size, data);
+  public IntArray create(long intArrayId, int[] data) throws IntArrayException {
+    return new IntArray(intArrayId, data);
   }
 }

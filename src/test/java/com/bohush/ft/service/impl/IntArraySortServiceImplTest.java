@@ -25,9 +25,9 @@ class IntArraySortServiceImplTest {
     factory = new IntArrayFactoryImpl();
     service = new IntArraySortServiceImpl();
 
-    unsortedArray1 = factory.create(1, 5, new int[]{5, 1, 4, 2, 8});
-    unsortedArray2 = factory.create(2, 5, new int[]{3, 0, -2, 5, 1});
-    unsortedArray3 = factory.create(3, 6, new int[]{10, 7, 8, 9, 1, 5});
+    unsortedArray1 = factory.create(1, new int[]{5, 1, 4, 2, 8});
+    unsortedArray2 = factory.create(2, new int[]{3, 0, -2, 5, 1});
+    unsortedArray3 = factory.create(3, new int[]{10, 7, 8, 9, 1, 5});
   }
 
   @Test

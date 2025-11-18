@@ -385,3 +385,7 @@
 [2025-11-17 22:45:33] [INFO ] IntArrayRepository - Query finished
 [2025-11-17 22:56:32] [INFO ] IntArrayRepositorySortServiceImpl - Repository sorted by comparator=impl.service.com.bohush.ft.IntArrayRepositorySortServiceImplTest$$Lambda/0x00007c5948213070@b273a59
 [2025-11-17 22:58:55] [INFO ] IntArrayRepositorySortServiceImpl - Repository sorted by comparator=impl.service.com.bohush.ft.IntArrayRepositorySortServiceImplTest$$Lambda/0x000074d0b0213b50@b273a59
+[2025-11-18 19:43:55] [INFO ] IntArrayFileServiceImpl - Started reading from file
+[2025-11-18 19:43:55] [INFO ] IntArrayFileServiceImpl - Invalid line in file: '5 6 seven 8'Skipped
+[2025-11-18 19:43:55] [INFO ] IntArrayFileServiceImpl - Invalid line in file: '12 thirteen 14'Skipped
+[2025-11-18 19:43:55] [INFO ] IntArrayFileServiceImpl - File was read successful!

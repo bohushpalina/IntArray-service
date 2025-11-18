@@ -21,9 +21,9 @@ class IntArrayRepositorySortServiceImplTest {
 
   @BeforeEach
   void setUp() throws IntArrayException {
-    array1 = factory.create(1, 3, new int[]{1, 2, 3});
-    array2 = factory.create(2, 3, new int[]{5, 1, 9});
-    array3 = factory.create(3, 4, new int[]{0, 0, 10, 2});
+    array1 = factory.create(1, new int[]{1, 2, 3});
+    array2 = factory.create(2, new int[]{5, 1, 9});
+    array3 = factory.create(3, new int[]{0, 0, 10, 2});
 
     service = new IntArrayRepositorySortServiceImpl();
   }
@@ -37,7 +37,7 @@ class IntArrayRepositorySortServiceImplTest {
             Arrays.stream(b.getData()).max().getAsInt()
     );
     List<IntArray> actual = service.sort(input, comparator);
-    List<IntArray> expected = List.of(array1, array2, array3); // по возрастанию max-элемента
+    List<IntArray> expected = List.of(array1, array2, array3);
     assertEquals(expected, actual);
   }
 }

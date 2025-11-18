@@ -29,7 +29,7 @@ public class IntArraySortServiceImpl implements IntArraySortService {
     }
 
     log.info("Bubble sort finished for IntArray with ID: {}", intArray.getIntArrayId());
-    return factory.create(intArray.getIntArrayId(), size, data);
+    return factory.create(intArray.getIntArrayId(), data);
   }
 
   @Override
@@ -65,7 +65,7 @@ public class IntArraySortServiceImpl implements IntArraySortService {
     } while (swapped);
 
     log.info("Shake sort finished for IntArray with ID: {}", intArray.getIntArrayId());
-    return factory.create(intArray.getIntArrayId(), size, data);
+    return factory.create(intArray.getIntArrayId(), data);
   }
 
   @Override
@@ -74,7 +74,7 @@ public class IntArraySortServiceImpl implements IntArraySortService {
     int[] data = intArray.getData();
     mergeSortRecursive(data, 0, data.length - 1);
     log.info("Merge sort finished for IntArray with ID: {}", intArray.getIntArrayId());
-    return factory.create(intArray.getIntArrayId(), data.length, data);
+    return factory.create(intArray.getIntArrayId(), data);
   }
 
   private void mergeSortRecursive(int[] data, int left, int right) {

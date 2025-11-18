@@ -46,6 +46,7 @@ public class IntArrayRepository {
     return result;
   }
 
+
   public void sort(Comparator<? super IntArray> c) {
       arrays.sort(c);
       log.info("Sort operation completed successfully.");

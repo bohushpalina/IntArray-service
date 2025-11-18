@@ -34,10 +34,10 @@ class IntArrayRepositoryTest {
     repository = IntArrayRepository.getInstance();
     repository.clear();
 
-    ARRAY_1 = factory.create(1, 3, new int[]{1, 2, 3});
-    ARRAY_2 = factory.create(2, 3, new int[]{5, 1, 9});
-    ARRAY_3 = factory.create(3, 4, new int[]{0, 0, 10, 2});
-    ARRAY_4 = factory.create(4, 3, new int[]{-5, -3, -1});
+    ARRAY_1 = factory.create(1,  new int[]{1, 2, 3});
+    ARRAY_2 = factory.create(2, new int[]{5, 1, 9});
+    ARRAY_3 = factory.create(3, new int[]{0, 0, 10, 2});
+    ARRAY_4 = factory.create(4, new int[]{-5, -3, -1});
   }
 
   @Test

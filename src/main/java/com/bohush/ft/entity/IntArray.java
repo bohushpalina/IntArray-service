@@ -9,7 +9,6 @@ import java.util.Arrays;
 
 public class IntArray implements IntArrayObservable {
   private long intArrayId;
-  private int size;
   private int[] data;
   private IntArrayObservable observable = new IntArrayObservableImpl(this);
 
@@ -17,19 +16,12 @@ public class IntArray implements IntArrayObservable {
     super();
   }
 
-  public IntArray(long intArrayId, int size, int[] data) throws IntArrayException {
+  public IntArray(long intArrayId, int[] data) throws IntArrayException {
     this.intArrayId = intArrayId;
     if (data == null) {
       throw new IntArrayException("Input array cannot be null.");
     }
-    if (size <= 0) {
-      throw new IntArrayException("Size must be greater than zero.");
-    }
-    if (size > data.length) {
-      throw new IntArrayException("Size cannot exceed input array length.");
-    }
-    this.size = size;
-    this.data = Arrays.copyOf(data, this.size);
+    this.data = Arrays.copyOf(data, data.length);
   }
 
   public long getIntArrayId() {
@@ -41,11 +33,7 @@ public class IntArray implements IntArrayObservable {
   }
 
   public int getSize() {
-    return size;
-  }
-
-  public void setSize(int size) {
-    this.size = size;
+    return data.length;
   }
 
   public int[] getData() {
@@ -76,7 +64,7 @@ public class IntArray implements IntArrayObservable {
   public String toString() {
     return "IntArray{" +
             "customArrayId=" + intArrayId +
-            ", size=" + size +
+            ", size=" + data.length +
             ", data=" + Arrays.toString(data) +
             '}';
   }

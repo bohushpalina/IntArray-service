@@ -21,9 +21,9 @@ class SpecificationTest {
 
   @BeforeEach
   void setUp() throws IntArrayException {
-    ARRAY_1 = factory.create(1, 3, new int[]{1, 2, 3});
-    ARRAY_2 = factory.create(2, 3, new int[]{5, 10, 20});
-    ARRAY_3 = factory.create(3, 1, new int[]{-2});
+    ARRAY_1 = factory.create(1, new int[]{1, 2, 3});
+    ARRAY_2 = factory.create(2, new int[]{5, 10, 20});
+    ARRAY_3 = factory.create(3, new int[]{-2});
   }
 
   @Test

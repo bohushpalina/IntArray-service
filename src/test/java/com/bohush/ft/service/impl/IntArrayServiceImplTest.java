@@ -25,8 +25,8 @@ class IntArrayServiceImplTest {
     factory = new IntArrayFactoryImpl();
     service = new IntArrayServiceImpl();
 
-    array = factory.create(1, 5, new int[]{1, 2, 3, 4, 5});
-    arrayForReplace = factory.create(2, 5, new int[]{1, -2, 3, -4, 5});
+    array = factory.create(1, new int[]{1, 2, 3, 4, 5});
+    arrayForReplace = factory.create(2, new int[]{1, -2, 3, -4, 5});
   }
 
   @Test
