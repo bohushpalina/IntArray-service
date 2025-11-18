@@ -17,7 +17,7 @@ public class IntArrayObserverImpl implements IntArrayObserver {
 
   @Override
   public void arrayUpdated(IntArrayEvent event) {
-    IntArray array = event.getIntArray();
+    IntArray array = event.getSourceArray();
     log.info("Observer received update for IntArray id={}", array.getIntArrayId());
 
     int min = service.findMinElement(array);

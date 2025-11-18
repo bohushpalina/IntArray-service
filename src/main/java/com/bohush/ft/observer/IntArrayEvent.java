@@ -1,14 +1,15 @@
 package com.bohush.ft.observer;
 import com.bohush.ft.entity.IntArray;
 
-public class IntArrayEvent {
-  private IntArray array;
+import java.util.EventObject;
 
-  public IntArrayEvent(IntArray array) {
-    this.array = array;
+public class IntArrayEvent extends EventObject {
+
+  public IntArrayEvent(IntArray source) {
+    super(source);
   }
 
-  public IntArray getIntArray() {
-    return array;
+  public IntArray getSourceArray() {
+    return (IntArray) getSource();
   }
 }

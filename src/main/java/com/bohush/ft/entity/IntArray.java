@@ -1,16 +1,18 @@
 package com.bohush.ft.entity;
 
 import com.bohush.ft.exception.IntArrayException;
+import com.bohush.ft.observer.IntArrayEvent;
 import com.bohush.ft.observer.IntArrayObservable;
 import com.bohush.ft.observer.IntArrayObserver;
-import com.bohush.ft.observer.impl.IntArrayObservableImpl;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class IntArray implements IntArrayObservable {
   private long intArrayId;
   private int[] data;
-  private IntArrayObservable observable = new IntArrayObservableImpl(this);
+  private final List<IntArrayObserver> observers = new ArrayList<>();
 
   public IntArray() {
     super();
@@ -36,12 +38,16 @@ public class IntArray implements IntArrayObservable {
     return data.length;
   }
 
-  public int[] getData() {
+  public int[] getData(){
     return data;
   }
 
-  public void setData(int[] data) {
+  public void setData(int[] data) throws IntArrayException {
+    if (data == null) {
+      throw new IntArrayException("Data array cannot be null.");
+    }
     this.data = Arrays.copyOf(data, data.length);
+    notifyObservers();
   }
 
   @Override
@@ -71,16 +77,19 @@ public class IntArray implements IntArrayObservable {
 
   @Override
   public void attach(IntArrayObserver observer) {
-    observable.attach(observer);
+    if (observer != null && !observers.contains(observer)) {
+      observers.add(observer);
+    }
   }
 
   @Override
   public void detach(IntArrayObserver observer) {
-    observable.detach(observer);
+    observers.remove(observer);
   }
 
   @Override
   public void notifyObservers() {
-    observable.notifyObservers();
+    IntArrayEvent event = new IntArrayEvent(this);
+    observers.forEach(observer -> observer.arrayUpdated(event));
   }
 }

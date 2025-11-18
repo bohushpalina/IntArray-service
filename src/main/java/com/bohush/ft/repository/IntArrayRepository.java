@@ -13,8 +13,6 @@ public class IntArrayRepository {
   private final IntArrayObserver observer = new IntArrayObserverImpl();
   private List<IntArray> arrays = new ArrayList<>();
 
-
-
   private IntArrayRepository() {}
   public static IntArrayRepository getInstance() {
     if (instance == null) {
@@ -26,23 +24,19 @@ public class IntArrayRepository {
 
   public boolean add(IntArray array) {
     boolean result = arrays.add(array);
-    array.attach(observer);
     if (result) {
-      log.info("Successfully added array: {}", array);
-    } else {
-      log.info("Failed to add array: {}", array);
+      array.attach(observer);
     }
+    log.info("Add operation for array {} completed successfully: {}", array, result);
     return result;
   }
 
   public boolean remove(IntArray o) {
     boolean result = arrays.remove(o);
-    o.detach(observer);
     if (result) {
-      log.info("Successfully removed object: {}", o);
-    } else {
-      log.info("Object not found for removal: {}", o);
+      o.detach(observer);
     }
+    log.info("Remove operation for object {} completed successfully: {}", o, result);
     return result;
   }
 

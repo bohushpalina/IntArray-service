@@ -389,3 +389,15 @@
 [2025-11-18 19:43:55] [INFO ] IntArrayFileServiceImpl - Invalid line in file: '5 6 seven 8'Skipped
 [2025-11-18 19:43:55] [INFO ] IntArrayFileServiceImpl - Invalid line in file: '12 thirteen 14'Skipped
 [2025-11-18 19:43:55] [INFO ] IntArrayFileServiceImpl - File was read successful!
+[2025-11-18 19:45:06] [INFO ] IntArrayRepositorySortServiceImpl - Repository sorted by comparator
+[2025-11-18 20:02:20] [INFO ] IntArrayServiceImpl - Counting positive elements
+[2025-11-18 20:02:20] [INFO ] IntArrayServiceImpl - Finding max element in array with size 5
+[2025-11-18 20:02:20] [INFO ] IntArrayServiceImpl - Counting negative elements
+[2025-11-18 20:02:20] [INFO ] IntArrayServiceImpl - Replacing elements by condition with new value = 0
+[2025-11-18 20:02:20] [INFO ] IntArrayServiceImpl - Finding min element in array with size 5
+[2025-11-18 20:02:20] [INFO ] IntArrayServiceImpl - Calculating average value for array
+[2025-11-18 21:59:18] [INFO ] IntArrayFileServiceImpl - Started reading from file
+[2025-11-18 21:59:18] [INFO ] IntArrayFileServiceImpl - Invalid line in file: '5 6 seven 8'Skipped
+[2025-11-18 21:59:18] [INFO ] IntArrayFileServiceImpl - Invalid line in file: '12 thirteen 14'Skipped
+[2025-11-18 21:59:18] [INFO ] IntArrayFileServiceImpl - File was read successful!
+[2025-11-18 21:59:29] [INFO ] IntArrayRepositorySortServiceImpl - Repository sorted by comparator

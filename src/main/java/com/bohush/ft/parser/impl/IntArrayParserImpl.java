@@ -12,10 +12,10 @@ public class IntArrayParserImpl implements IntArrayParser {
   @Override
   public int[] parseLine(String line) {
     String normalized = line.replaceAll(REGEX_DELIMITERS, REPLACEMENT_SPACE);
-    String[] tokens = normalized.split(REGEX_WHITESPACE);
-    Stream<String> stringStream = Arrays.stream(tokens);
-    IntStream stream = stringStream.mapToInt(Integer::parseInt);
-    int[] result = stream.toArray();
+    int[] result = Arrays.stream(normalized.split(REGEX_WHITESPACE))
+            .filter(s -> !s.isEmpty())
+            .mapToInt(Integer::parseInt)
+            .toArray();
     return result;
   }
 }
